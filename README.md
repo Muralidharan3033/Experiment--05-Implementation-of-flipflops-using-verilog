@@ -102,26 +102,118 @@ Q(t+1)=T′Q(t)+TQ(t)′
 ⇒Q(t+1)=T⊕Q(t)
 
 ### Procedure
-/* write all the steps invloved */
+ 1. Create a New Project:
+Open Quartus and create a new project by selecting "File" > "New Project Wizard." Follow the wizard's instructions to set up your project, including specifying the project name, location, and target device (FPGA). 2. Create a New Design File:
 
+Once the project is created, right-click on the project name in the Project Navigator and select "Add New File." Choose "Verilog HDL File" or "VHDL File," depending on your chosen hardware description language. 3. Write the Combinational Logic Code:
 
+Open the newly created Verilog or VHDL file and write the code for your combinational logic. 4. Compile the Project: To compile the project, click on "Processing" > "Start Compilation" in the menu. Quartus will analyze your code, synthesize it into a netlist, and perform optimizations based on your target FPGA device. 5. Analyze and Fix Errors:
+
+If there are any errors or warnings during the compilation process, Quartus will display them in the Messages window. Review and fix any issues in your code if necessary. View the RTL diagram. 6. 
+ 6. Verification:
+
+Click on "File" > "New" > "Verification/Debugging Files" > "University Program VWF".
+
+Once Waveform is created Right Click on the Input/Output Panel > " Insert Node or Bus" > Click on Node Finder > Click On "List" > Select All. Give the Input Combinations according to the Truth Table amd then simulate the Output Waveform.
 
 ### PROGRAM 
+1. SR flip flop
+
+
+
+
+ ![image](https://github.com/vasanthkumarch/Experiment--05-Implementation-of-flipflops-using-verilog/assets/147473403/c5ec1f1e-f09d-4950-a775-d8d42351bf38)
+
+
+
+
+ 2. D flip flop
+
+
+
+
+ ![image](https://github.com/vasanthkumarch/Experiment--05-Implementation-of-flipflops-using-verilog/assets/147473403/d1edbacd-898e-4986-a6f5-99cf318decda)
+
+
+
+
+
+ 3. JK flip flop
+
+
+
+
+
+![image](https://github.com/vasanthkumarch/Experiment--05-Implementation-of-flipflops-using-verilog/assets/147473403/598deb9d-63ab-40e0-9a94-62e4e2e0f7a0)
+
+
+
+
+
+4. T flip flop
+
+
+
+
+
+ 
+![image](https://github.com/vasanthkumarch/Experiment--05-Implementation-of-flipflops-using-verilog/assets/147473403/49a5bc29-eae9-42ee-931e-f79b8e07c4a3)
+
+
+
+  
+
+
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: Muralidharan M
+RegisterNumber: 23012704
 */
-
-
-
 
 
 
 ### RTL LOGIC FOR FLIPFLOPS 
 
+1.SR flip flop
 
 
+
+
+![image](https://github.com/vasanthkumarch/Experiment--05-Implementation-of-flipflops-using-verilog/assets/147473403/3ca6d5c9-5d1d-49f2-b2d7-0934a0b69ffe)
+
+
+
+
+
+2. D flip flop
+
+
+
+
+![image](https://github.com/vasanthkumarch/Experiment--05-Implementation-of-flipflops-using-verilog/assets/147473403/e6e5db75-623c-4a8e-b2c3-b6ba890f8e91)
+
+
+
+
+
+3. JK flip flop
+
+
+
+
+![image](https://github.com/vasanthkumarch/Experiment--05-Implementation-of-flipflops-using-verilog/assets/147473403/06e3e0a9-6ba3-4ced-9b34-747a51cd8586)
+
+
+
+
+
+4.T flip flop
+
+
+
+
+
+![image](https://github.com/vasanthkumarch/Experiment--05-Implementation-of-flipflops-using-verilog/assets/147473403/c91d9d68-2ffe-473a-aca9-7808a153a944)
 
 
 
@@ -130,7 +222,48 @@ RegisterNumber:
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 
+1. SR flip flop
 
+
+
+
+![image](https://github.com/vasanthkumarch/Experiment--05-Implementation-of-flipflops-using-verilog/assets/147473403/bfd4f0e5-2ed9-493f-8a31-4a41bd9d13e8)
+
+
+
+
+
+2. D flip flop
+
+
+
+
+
+![image](https://github.com/vasanthkumarch/Experiment--05-Implementation-of-flipflops-using-verilog/assets/147473403/6f23a236-b015-4b8a-8804-497912ce5b70)
+
+
+
+
+
+
+3. JK flip flop
+
+
+
+
+![image](https://github.com/vasanthkumarch/Experiment--05-Implementation-of-flipflops-using-verilog/assets/147473403/a42bfa38-d65c-41a0-b636-ad0affde82bc)
+
+
+
+
+
+4. T flip flop
+
+
+
+
+
+![image](https://github.com/vasanthkumarch/Experiment--05-Implementation-of-flipflops-using-verilog/assets/147473403/738f6100-c767-4778-aa0f-ae50c92dfca3)
 
 
 
@@ -138,3 +271,4 @@ RegisterNumber:
 
 
 ### RESULTS 
+By this we have verified the truth table of JK and SR using verilog.
